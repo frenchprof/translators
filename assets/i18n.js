@@ -48,6 +48,7 @@ window.I18N = {
     "f.send": "Send quote request", "f.fine": "Also opens a pre-filled WhatsApp message so you can attach originals.",
     "f.ok.t": "Quote request sent", "f.ok.d": "We'll reply within a few hours. If WhatsApp didn't open, tap below.", "f.ok.cta": "Open WhatsApp",
     "f.err.name": "Please enter your name.", "f.err.email": "Please enter a valid email address.", "f.err.send": "Something went wrong. We've opened WhatsApp instead so you can still reach us.",
+    "card.hint": "Get a quote for this →", "tier.hint": "Select →", "fab.tip": "Bonjour 👋 Need a translation?", "stamp.sub": "TRADUCTION ASSERMENTÉE",
     "footer.tag": "Embassy-listed sworn translator · Singapore",
     "wa.hello": "Bonjour! My name is"
   },
@@ -99,6 +100,7 @@ window.I18N = {
     "f.send": "Envoyer la demande", "f.fine": "Ouvre aussi un message WhatsApp pré-rempli pour joindre vos originaux.",
     "f.ok.t": "Demande envoyée", "f.ok.d": "Nous répondrons dans les prochaines heures. Si WhatsApp ne s'est pas ouvert, appuyez ci-dessous.", "f.ok.cta": "Ouvrir WhatsApp",
     "f.err.name": "Veuillez indiquer votre nom.", "f.err.email": "Veuillez saisir une adresse e-mail valide.", "f.err.send": "Une erreur est survenue. Nous avons ouvert WhatsApp pour que vous puissiez nous joindre.",
+    "card.hint": "Demander un devis →", "tier.hint": "Choisir →", "fab.tip": "Bonjour 👋 Besoin d'une traduction ?", "stamp.sub": "TRADUCTION ASSERMENTÉE",
     "footer.tag": "Traducteur assermenté inscrit auprès des ambassades · Singapour",
     "wa.hello": "Bonjour ! Je m'appelle"
   },
@@ -150,6 +152,7 @@ window.I18N = {
     "f.send": "发送报价请求", "f.fine": "同时打开预填的 WhatsApp 消息，方便您附上原件。",
     "f.ok.t": "报价请求已发送", "f.ok.d": "我们将在数小时内回复。若 WhatsApp 未自动打开，请点击下方。", "f.ok.cta": "打开 WhatsApp",
     "f.err.name": "请输入您的姓名。", "f.err.email": "请输入有效的电子邮件地址。", "f.err.send": "发送失败。我们已为您打开 WhatsApp，仍可联系我们。",
+    "card.hint": "为此获取报价 →", "tier.hint": "选择 →", "fab.tip": "您好 👋 需要翻译吗？", "stamp.sub": "宣誓翻译",
     "footer.tag": "大使馆认证宣誓翻译员 · 新加坡",
     "wa.hello": "您好！我叫"
   }

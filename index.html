@@ -42,6 +42,7 @@
   <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="nav" id="nav">
+    <div class="progress" id="progress" aria-hidden="true"></div>
     <div class="wrap nav__inner">
       <a class="brand" href="#top" aria-label="Fr·En·Ch Translators.Asia — home">
         <span class="brand__mark"><b>Fr</b><i>·</i><b>En</b><i>·</i><b>Ch</b></span>
@@ -83,6 +84,7 @@
   <main id="main">
     <!-- ───────── HERO ───────── -->
     <section class="hero" id="top">
+      <div class="blob blob--1"></div><div class="blob blob--2"></div><div class="blob blob--3"></div>
       <div class="wrap">
         <p class="eyebrow reveal" data-i18n="hero.eyebrow">Embassy-listed sworn translator · Singapore</p>
         <h1 class="hero__title reveal" data-i18n-html="hero.title">Official translations,<br><em>accepted the first time.</em></h1>
@@ -133,47 +135,53 @@
         </div>
 
         <div class="grid grid--3">
-          <article class="card reveal">
+          <article class="card reveal" tabindex="0" role="button" data-prefill-doc="Birth / Marriage Certificate">
             <div class="card__icon">👤</div>
             <h3 data-i18n="svc.1.t">Personal & civil</h3>
             <ul class="tags">
               <li data-i18n="svc.1.a">Passport</li><li data-i18n="svc.1.b">Birth / marriage certificate</li><li data-i18n="svc.1.c">Work permit</li><li data-i18n="svc.1.d">Driving licence</li>
             </ul>
+            <span class="card__hint" data-i18n="card.hint">Get a quote for this →</span>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" tabindex="0" role="button" data-prefill-doc="Academic">
             <div class="card__icon">🎓</div>
             <h3 data-i18n="svc.2.t">Academic</h3>
             <ul class="tags">
               <li data-i18n="svc.2.a">Diplomas & certificates</li><li data-i18n="svc.2.b">Transcripts</li><li data-i18n="svc.2.c">Recommendation letters</li>
             </ul>
+            <span class="card__hint" data-i18n="card.hint">Get a quote for this →</span>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" tabindex="0" role="button" data-prefill-doc="Reports & Contracts">
             <div class="card__icon">🩺</div>
             <h3 data-i18n="svc.3.t">Medical & insurance</h3>
             <ul class="tags">
               <li data-i18n="svc.3.a">Medical reports</li><li data-i18n="svc.3.b">Insurance claims</li><li data-i18n="svc.3.c">Discharge summaries</li>
             </ul>
+            <span class="card__hint" data-i18n="card.hint">Get a quote for this →</span>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" tabindex="0" role="button" data-prefill-doc="Reports & Contracts">
             <div class="card__icon">🏢</div>
             <h3 data-i18n="svc.4.t">Corporate & business</h3>
             <ul class="tags">
               <li data-i18n="svc.4.a">Company registration</li><li data-i18n="svc.4.b">Financial statements</li><li data-i18n="svc.4.c">Board resolutions</li>
             </ul>
+            <span class="card__hint" data-i18n="card.hint">Get a quote for this →</span>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" tabindex="0" role="button" data-prefill-doc="Reports & Contracts">
             <div class="card__icon">⚖️</div>
             <h3 data-i18n="svc.5.t">Legal & official</h3>
             <ul class="tags">
               <li data-i18n="svc.5.a">Contracts</li><li data-i18n="svc.5.b">Affidavits</li><li data-i18n="svc.5.c">Court documents</li><li data-i18n="svc.5.d">Apostille guidance (2025)</li>
             </ul>
+            <span class="card__hint" data-i18n="card.hint">Get a quote for this →</span>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" tabindex="0" role="button" data-prefill-doc="Other">
             <div class="card__icon">✍️</div>
             <h3 data-i18n="svc.6.t">Proofreading & editing</h3>
             <ul class="tags">
               <li data-i18n="svc.6.a">Proofreading</li><li data-i18n="svc.6.b">Editing</li><li data-i18n="svc.6.c">Bilingual review</li>
             </ul>
+            <span class="card__hint" data-i18n="card.hint">Get a quote for this →</span>
           </article>
         </div>
       </div>
@@ -205,10 +213,10 @@
         </ol>
 
         <div class="tiers reveal" aria-label="Turnaround options">
-          <div class="tier"><strong>24h</strong><span data-i18n="tier.1">Urgent</span></div>
-          <div class="tier"><strong>48h</strong><span data-i18n="tier.2">Express</span></div>
-          <div class="tier tier--default"><strong data-i18n="tier.3n">3–5 days</strong><span data-i18n="tier.3">Standard</span></div>
-          <div class="tier"><strong data-i18n="tier.4n">1–2 weeks</strong><span data-i18n="tier.4">Economy</span></div>
+          <button type="button" class="tier" data-prefill-urg="Urgent 24h"><strong>24h</strong><span data-i18n="tier.1">Urgent</span><span class="tier__hint" data-i18n="tier.hint">Select →</span></button>
+          <button type="button" class="tier" data-prefill-urg="Express 48h"><strong>48h</strong><span data-i18n="tier.2">Express</span><span class="tier__hint" data-i18n="tier.hint">Select →</span></button>
+          <button type="button" class="tier tier--default" data-prefill-urg="Standard 5d"><strong data-i18n="tier.3n">3–5 days</strong><span data-i18n="tier.3">Standard</span><span class="tier__hint" data-i18n="tier.hint">Select →</span></button>
+          <button type="button" class="tier" data-prefill-urg="Economy"><strong data-i18n="tier.4n">1–2 weeks</strong><span data-i18n="tier.4">Economy</span><span class="tier__hint" data-i18n="tier.hint">Select →</span></button>
         </div>
       </div>
     </section>
@@ -378,6 +386,7 @@
 
           <div class="form form--success reveal" id="formSuccess" hidden>
             <div class="success__icon">✓</div>
+            <div class="stamp" aria-hidden="true"><span>SWORN</span><small>TRADUCTION ASSERMENTÉE</small></div>
             <h3 data-i18n="f.ok.t">Quote request sent</h3>
             <p data-i18n="f.ok.d">We'll reply within a few hours. If WhatsApp didn't open, tap below.</p>
             <a class="btn btn--primary" id="successWA" href="https://wa.me/6581391311" target="_blank" rel="noopener" data-i18n="f.ok.cta">Open WhatsApp</a>
@@ -403,9 +412,14 @@
     </div>
   </footer>
 
+  <div class="sticky-cta" id="stickyCta">
+    <a class="btn btn--wa" href="https://wa.me/6581391311?text=Bonjour%2C%20I%20need%20a%20translation" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn btn--primary" href="#contact" data-i18n="nav.cta">Get a quote</a>
+  </div>
+  <div class="fab-wrap"><span class="fab__tip" id="fabTip">Bonjour 👋</span>
   <a class="fab" href="https://wa.me/6581391311?text=Bonjour%2C%20I%20need%20a%20translation" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
-  </a>
+  </a></div>
 
   <script src="assets/i18n.js"></script>
   <script src="assets/main.js"></script>
